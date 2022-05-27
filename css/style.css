@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  background-color: white;
+  width: 45%;
+  display: flex;
+  border-radius: 10px;
+}
+main > img {
+  width: 300px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main aside {
+  width: 55%;
+  margin: auto;
+}
+main h1 {
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+  border-top: 30px;
+}
+main p {
+  color: hsl(212deg, 23%, 69%);
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+}
+footer .author {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer .author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+footer p {
+  margin-top: 0;
+  font-size: 13px;
+}
+footer h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: hsl(217deg, 19%, 35%);
+}
+
+.button {
+  align-self: center;
+  cursor: pointer;
+  background-color: hsl(210deg, 46%, 95%);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+
+.socials {
+  position: absolute;
+  background-color: hsl(217deg, 19%, 35%);
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  border-radius: 5px;
+  padding: 12px 0;
+  right: -15%;
+  bottom: 120%;
+  display: none;
+}
+.socials img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.socials p {
+  align-self: center;
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.arrow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 18.75px solid hsl(217deg, 19%, 35%);
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+  position: absolute;
+  right: 3%;
+  bottom: 103%;
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    flex-direction: column;
+    width: 300px;
+    overflow-x: hidden;
+  }
+  main > img {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0 !important;
+  }
+  main h1 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  main p {
+    font-size: 13px;
+  }
+  main aside {
+    width: 85% !important;
+  }
+  main h2 {
+    font-size: 13px;
+  }
+
+  .button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  .button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .socials {
+    bottom: 0;
+    left: -10%;
+    height: 50%;
+    width: auto;
+    justify-content: left;
+  }
+  .socials p {
+    margin-left: 30px;
+  }
+
+  .arrow {
+    right: 100000000px;
+  }
+}/*# sourceMappingURL=style.css.map */

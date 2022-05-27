@@ -1,0 +1,174 @@
+$title-color: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$paragraph-color: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background-color: $light-grayish-blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Manrope", sans-serif;
+}
+
+main {
+	background-color: white;
+	width: 45%;
+	display: flex;
+	border-radius: 10px;
+	> img {
+		width: 300px;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	aside {
+		width: 55%;
+		margin: auto;
+	}
+	h1 {
+		color: $title-color;
+		font-weight: 700;
+		border-top: 30px;
+	}
+	p {
+		color: $paragraph-color;
+		font-weight: 500;
+	}
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	img {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		align-self: center;
+	}
+	.author {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.author-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 10px;
+	}
+	p {
+		margin-top: 0;
+		font-size: 13px;
+	}
+	h2 {
+		margin-bottom: 0;
+		font-size: 1rem;
+		color: $title-color;
+	}
+}
+.button {
+	align-self: center;
+	cursor: pointer;
+	background-color: $light-grayish-blue;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 30px;
+		height: 30px;
+		margin-right: 3px;
+	}
+}
+
+.socials {
+	position: absolute;
+	background-color: $title-color;
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	border-radius: 5px;
+	padding: 12px 0;
+	right: -15%;
+	bottom: 120%;
+	display: none;
+	img {
+		width: 20px;
+		height: 20px;
+		margin-left: 10px;
+	}
+	p {
+		align-self: center;
+		letter-spacing: 4px;
+		font-size: 11px;
+		margin-bottom: 0;
+	}
+}
+.arrow {
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border-top: 18.75px solid $title-color;
+	border-right: 11px solid transparent;
+	border-left: 11px solid transparent;
+	position: absolute;
+	right: 3%;
+	bottom: 103%;
+	display: none;
+}
+
+@media screen and (max-width: 1300px) {
+	main {
+		flex-direction: column;
+		width: 300px;
+		overflow-x: hidden;
+		> img {
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 0 !important;
+		}
+		h1 {
+			font-size: 16px;
+			margin-top: 30px;
+		}
+		p {
+			font-size: 13px;
+		}
+		aside {
+			width: 85% !important;
+		}
+		h2 {
+			font-size: 13px;
+		}
+	}
+	.button {
+		width: 30px;
+		height: 30px;
+		margin-bottom: 20px;
+		z-index: 1;
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.socials {
+		bottom: 0;
+		left: -10%;
+		height: 50%;
+		width: auto;
+		justify-content: left;
+		p {
+			margin-left: 30px;
+		}
+	}
+	.arrow {
+		right: 100000000px;
+	}
+}
